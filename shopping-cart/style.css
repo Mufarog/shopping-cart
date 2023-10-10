@@ -1,0 +1,93 @@
+/* Global Styles */
+body {
+	background-color: #f0f0f0;
+	font-family: Arial, sans-serif;
+  }
+  
+  .container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+  }
+  
+  /* Header Styles */
+  h2 {
+	text-align: center;
+	padding: 10px;
+	background-color: #333;
+	color: #fff;
+  }
+  
+  /* Cart Item Styles */
+  .cart-item {
+	background-color: #fff;
+	margin-bottom: 20px;
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+  }
+  
+  .cart-item img {
+	max-width: 100%;
+	height: auto;
+  }
+  
+  .cart-item h5 {
+	margin-top: 10px;
+	font-size: 18px;
+  }
+  
+  /* Quantity Input Styles */
+  .number-spinner {
+	width: 100px;
+	margin: 20px auto;
+  }
+  
+  .number-spinner .btn {
+	width: 30px;
+	height: 30px;
+	background-color: #333;
+	color: #fff;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+  }
+  
+  .number-spinner input {
+	width: 40px;
+	height: 30px;
+	text-align: center;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	outline: none;
+	font-size: 16px;
+  }
+  
+  /* Total Price Styles */
+  .cart-item h5 {
+	font-size: 18px;
+  }
+  
+  /* Media Query for Responsiveness */
+  @media (max-width: 768px) {
+	.cart-item {
+	  padding: 10px;
+	}
+  
+	.number-spinner {
+	  width: 80px;
+	  margin: 10px auto;
+	}
+  
+	.number-spinner .btn {
+	  width: 25px;
+	  height: 25px;
+	}
+  
+	.number-spinner input {
+	  width: 30px;
+	  height: 25px;
+	  font-size: 14px;
+	}
+  }
+  

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shopping Cart</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <section>
+      <div class="container">
+        <h2 class="px-5 p-2">Clothes Shopping Cart</h2>
+        <div class="cart">
+          <div class="col-md-12 col-lg-10 mx-auto">
+            <div class="cart-item">
+              <div class="row">
+                <div class="col-md-7 center-item">
+                  <img src="data:image/jpeg;base64,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" alt="" />
+                  <h5>Plain Black Shirt</h5>
+                </div>
+
+                <div class="col-md-5 center-item">
+                    <div class="">
+                    
+                    <button id="phone-minus" class="btn btn-default">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <input
+                      id="phone-number"
+                      type="number"
+                      min="0"
+                      class="form-control text-center"
+                      value="1"
+                    />
+                    <button id="phone-plus" class="btn btn-default">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                  <h5>R<span id="phone-total">500</span></h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="cart-item">
+              <div class="row">
+                <div class="col-md-7 center-item mx-auto">
+                  <img src="data:image/jpeg;base64,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" alt="" />
+                  <h5>Plain Blue Shirt</h5>
+                </div>
+                
+                <div class="col-md-5 center-item">
+                    <div class="">
+                  
+                    <button id="case-minus" class="btn btn-default">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <input
+                    id="case-number"
+                    type="number"
+                    min="0"
+                    class="form-control text-center"
+                    value="1"
+                  />
+                    <button id="case-plus" class="btn btn-default">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                  <h5>R <span id="case-total">500</span></h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="cart-item">
+              <div class="row g-2">
+                <div class="col-6">
+                  <h5>Subtotal:</h5>
+                  <h5>Tax:</h5>
+                  <h5>Total:</h5>
+                </div>
+
+                <div class="col-6 status">
+                  <h5>R<span id="sub-total">1000</span></h5>
+                  <h5>R<span id="tax-amount">100</span></h5>
+                  <h5>R<span id="total-price">1100</span></h5>
+                </div>
+              </div>
+            </div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
